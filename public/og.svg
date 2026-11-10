@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+ <rect width="1200" height="630" fill="#f7f2e9"/>
+ <path d="M0 100h1200M0 200h1200M0 300h1200M0 400h1200M0 500h1200M100 0v630M200 0v630M300 0v630M400 0v630M500 0v630M600 0v630M700 0v630M800 0v630M900 0v630M1000 0v630M1100 0v630" stroke="#a85236" opacity=".06"/>
+ <g transform="translate(85 92) scale(1.5)"><rect width="64" height="64" rx="17" fill="#a85236"/><path d="M17 17h30v30H17zM17 29h18v18M35 17v12h12" fill="none" stroke="#fff" stroke-width="3"/><path d="M21 35h9v7h-9z" fill="#eac39b"/></g>
+ <text x="85" y="296" font-family="sans-serif" font-size="64" font-weight="700" fill="#292632">Floor Plan Studio</text>
+ <text x="85" y="358" font-family="sans-serif" font-size="27" fill="#696471">Plan a room, one thoughtful move at a time.</text>
+ <path d="M85 446h1030" stroke="#a85236" opacity=".25"/>
+ <text x="85" y="495" font-family="monospace" font-size="18" fill="#a85236">VUE 3 / TAILWIND 4 / LOCAL FIRST</text>
+ <text x="1115" y="570" text-anchor="end" font-family="sans-serif" font-size="19" fill="#696471">FP · CodeSculptor</text>
+</svg>

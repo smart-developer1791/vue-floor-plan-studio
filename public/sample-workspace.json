@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "name": "A small creative studio",
+  "width": 24,
+  "height": 18,
+  "items": [
+    {
+      "id": "desk-1",
+      "label": "Window desk",
+      "kind": "desk",
+      "tone": "clay",
+      "x": 2,
+      "y": 2,
+      "width": 6,
+      "height": 3,
+      "locked": false
+    },
+    {
+      "id": "sofa-1",
+      "label": "Reading sofa",
+      "kind": "sofa",
+      "tone": "moss",
+      "x": 15,
+      "y": 3,
+      "width": 7,
+      "height": 4,
+      "locked": false
+    },
+    {
+      "id": "table-1",
+      "label": "Project table",
+      "kind": "table",
+      "tone": "slate",
+      "x": 9,
+      "y": 9,
+      "width": 6,
+      "height": 4,
+      "locked": false
+    },
+    {
+      "id": "shelf-1",
+      "label": "Materials shelf",
+      "kind": "shelf",
+      "tone": "clay",
+      "x": 2,
+      "y": 12,
+      "width": 2,
+      "height": 5,
+      "locked": true
+    },
+    {
+      "id": "plant-1",
+      "label": "Corner plant",
+      "kind": "plant",
+      "tone": "moss",
+      "x": 20,
+      "y": 14,
+      "width": 2,
+      "height": 2,
+      "locked": false
+    }
+  ],
+  "provenance": {
+    "project": "vue-floor-plan-studio",
+    "author": "CodeSculptor",
+    "marker": "FP-6F25EBF7"
+  }
+}

@@ -1,0 +1,86 @@
+@import 'tailwindcss';
+@font-face {
+  font-family: 'DM Sans Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 1000;
+  src: url('@fontsource-variable/dm-sans/files/dm-sans-latin-wght-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Bricolage Grotesque Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200 800;
+  src: url('@fontsource-variable/bricolage-grotesque/files/bricolage-grotesque-latin-wght-normal.woff2')
+    format('woff2');
+}
+
+@theme {
+  --font-sans: 'DM Sans Variable', sans-serif;
+  --font-display: 'Bricolage Grotesque Variable', sans-serif;
+}
+
+@layer base {
+  :root {
+    @apply bg-background font-sans text-sm text-ink antialiased [font-synthesis:none];
+  }
+  body {
+    @apply m-0 min-w-80;
+  }
+  button,
+  input,
+  select,
+  textarea {
+    @apply [font:inherit];
+  }
+  button {
+    @apply inline-flex min-h-10 cursor-pointer items-center justify-center gap-2 rounded-lg border border-line px-3 py-2 text-sm font-semibold transition-colors;
+  }
+  button:disabled {
+    @apply cursor-not-allowed opacity-40;
+  }
+  button:focus-visible,
+  a:focus-visible {
+    @apply outline-2 outline-offset-4 outline-accent;
+  }
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible {
+    @apply outline-2 outline-offset-2 outline-accent;
+  }
+  label {
+    @apply block text-xs font-semibold;
+  }
+  input:not([type='checkbox']):not([type='range']),
+  select,
+  textarea {
+    @apply mt-2 block min-h-10 w-full min-w-0 rounded-lg border border-line bg-surface px-3 py-2 text-sm font-normal text-ink;
+  }
+  input[type='checkbox'] {
+    @apply size-4 accent-accent;
+  }
+  input[type='range'] {
+    @apply mt-3 w-full accent-accent;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-display;
+  }
+  dialog {
+    @apply m-auto max-h-[calc(100dvh-2rem)] w-[min(42rem,calc(100%-2rem))] rounded-2xl border border-line bg-surface p-0 text-ink shadow-2xl;
+  }
+  dialog[open] {
+    @apply flex flex-col;
+  }
+  dialog::backdrop {
+    @apply bg-ink/50 backdrop-blur-sm;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      @apply scroll-auto! [animation-duration:0.001ms]! [transition-duration:0.001ms]!;
+    }
+  }
+}

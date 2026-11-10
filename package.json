@@ -1,0 +1,37 @@
+{
+  "name": "vue-floor-plan-studio",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A grid-based room planner with collision-aware furniture placement and SVG exports.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "node --test tests/*.test.ts",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "vue": "^3.5.42",
+    "@tailwindcss/vite": "^4.3.3",
+    "tailwindcss": "^4.3.3",
+    "@fontsource-variable/dm-sans": "^5.3.0",
+    "@fontsource-variable/bricolage-grotesque": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "@vitejs/plugin-vue": "^6.0.8",
+    "@vue/tsconfig": "^0.9.1",
+    "typescript": "~6.0.2",
+    "vite": "^8.3.0",
+    "vue-tsc": "^3.3.11",
+    "prettier": "^3.9.9",
+    "@playwright/test": "^1.63.0"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=24.0.0"
+  }
+}
